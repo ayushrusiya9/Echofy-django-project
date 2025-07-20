@@ -1,0 +1,22 @@
+.contact-breadcrumb-section{
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;   
+}
+
+.contact-breadcrumb-bg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8); 
+}
+
+.contact-breadcrumb-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center; 
+}
