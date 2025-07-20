@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Join Us - Echofy
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'css/join.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Breadcrumb section -->
+<div class="container-page-about">
+    <img src="{% static 'images/breadcumb-bg.jpg' %}" alt="Breadcrumb Background">
+    <div class="about-page-heading">
+        <h1 style="color: white;">Join Us</h1>
+        <h4>Become a part of Echofy</h4>
+    </div>
+</div>
+
+<!-- Join Us Form Section -->
+<section class="join-section py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Let's Build a Greener Future Together</h2>
+      <p class="text-muted">Fill the form below to become a part of our mission</p>
+    </div>
+    <form action="{% url 'join_user' %}" method="POST" class="row g-4 bg-light p-4 rounded shadow">
+      {% csrf_token %}
+      <div class="col-md-6">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Enter your full name" required>
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" name="email" class="form-control" placeholder="you@gmail.com" required>
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="text" name="phone" class="form-control" placeholder="e.g. 9876543210" required>
+      </div>
+      <div class="col-md-6">
+        <label for="linkedin" class="form-label">LinkedIn Profile</label>
+        <input type="url" name="linkedin" class="form-control" placeholder="https://linkedin.com/in/your-profile">
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-success px-5 py-2">Join Now</button>
+      </div>
+    </form>
+  </div>
+</section>
+{{msg}}
+{% endblock %}

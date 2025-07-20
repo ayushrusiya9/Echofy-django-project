@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+About - Echofy
+{% endblock %}
+
+{% block css %}
+  {{ block.super }}
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Breadcrumb Section Start -->
+<div class="breadcrumb-section">
+  <img src="{% static 'images/breadcumb-bg.jpg' %}" alt="Background" class="breadcrumb-bg">
+  <div class="breadcrumb-overlay d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-5 fw-bold text-white">About Us</h1>
+    <p class="text-white">
+      <i class="bi bi-circle-fill text-success me-1"></i> Echofy — <span class="text-light">About Us</span>
+    </p>
+  </div>
+</div>
+
+<!-- About Section Start -->
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="{% static 'images/about-thumb.png' %}" alt="About Image" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6">
+        <p class="text-success fw-semibold">
+          <i class="bi bi-leaf"></i> ABOUT ECHOFY
+        </p>
+        <h2 class="fw-bold display-6 mb-3">Environmental Sustainable<br>Forever Green Future</h2>
+
+        <div class="mb-4">
+          <h5 class="fw-bold text-dark">
+            <i class="bi bi-tree text-success me-2"></i> Economic Benefits
+          </h5>
+          <p class="text-muted">Smarter innovation for ethical, eco-friendly networks with sustainable growth and transparent impact.</p>
+        </div>
+
+        <div class="mb-4">
+          <h5 class="fw-bold text-dark">
+            <i class="bi bi-shield-check text-success me-2"></i> Safe Environment
+          </h5>
+          <p class="text-muted">Environment-first ideas for ethical growth with clean energy and greener global collaboration.</p>
+        </div>
+
+        <a href="#" class="btn btn-success px-4 py-2">
+          More About <i class="bi bi-leaf ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section End -->
+ <!-- skill section -->
+  <section class="skills-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left content -->
+        <div class="col-md-6">
+          <h6 class="text-success fw-bold mb-2"><img src="{% static 'images/section-shape.png' %}" alt=""> OUR SKILLS
+          </h6>
+          <h2 class="skills-title">Getting A Greener Future</h2>
+          <h3 class="skills-subtitle mb-4">Safe Environment</h3>
+
+          <p class="text-muted mb-4">Dynamically empower sustainable ecosystems with strategic green innovations and
+            planet-positive initiatives across global communities.</p>
+
+          <div class="d-flex gap-3 flex-wrap mb-4">
+            <button class="skills-btn">
+              <img src="{% static 'images/service-icon2.png' %}" width="25"> Safe Environment
+            </button>
+            <button class="skills-btn">
+              <img src="{% static 'images/service-icon3.png' %}" width="25"> Dirty Recycling
+            </button>
+          </div>
+
+          <!-- Progress Bars -->
+          <div class="progress-wrapper">
+            <label class="fw-bold">Recycling</label>
+            <div class="progress mb-3" style="height: 8px;">
+              <div class="progress-bar progress-bar-custom" style="width: 90%;"></div>
+            </div>
+            <label class="fw-bold">Ocean Cleaning</label>
+            <div class="progress" style="height: 8px;">
+              <div class="progress-bar progress-bar-custom" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right image -->
+        <div class="col-md-6 text-center">
+          <div class="position-relative d-inline-block">
+            <img src="{% static 'images/skill-thumb.png' %}" class="img-fluid skill-graphic" alt="Skill Graphic">
+            <img src="{% static 'images/skill-shape-1.png' %}" class="img-fluid skill-sticker" width="130"
+              alt="Go Green">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="py-5 text-white"
+    style="background: url('{% static 'images/counter-bg.jpg' %}') no-repeat center center/cover;">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <img src="{% static 'images/counter-icon-1.png' %}" class="mb-3" alt="icon">
+          <h2 class="fw-bold">100+</h2>
+          <p class="mb-0">Team Member</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <img src="{% static 'images/counter-icon-2.png' %}" class="mb-3" alt="icon">
+          <h2 class="fw-bold">960+</h2>
+          <p class="mb-0">Complete Works</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <img src="{% static 'images/counter-icon-3.png' %}" class="mb-3" alt="icon">
+          <h2 class="fw-bold">38</h2>
+          <p class="mb-0">Award Wining</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <img src="{% static 'images/counter-icon-4.png' %}" class="mb-3" alt="icon">
+          <h2 class="fw-bold">4.7</h2>
+          <p class="mb-0">Avg Ratings</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section -->
+   <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="{% static 'images/process-thumb.jpg' %}" alt="process" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <p class="text-success fw-semibold mb-2">
+            <i class="bi bi-flower2 me-1"></i> CONTACT US
+          </p>
+          <h2 class="fw-bold mb-3">
+            Fresh Environmental <br> Plant & Safe Trees
+          </h2>
+          <p class="text-muted mb-4">
+            Proactively revolutionize sustainable futures through eco-centric strategies. Seamlessly innovate clean
+            technologies and empower green infrastructure to foster a thriving and resilient global ecosystem.
+          </p>
+          <a href="#" class="btn btn-success px-4 py-2 d-inline-flex align-items-center">
+            Contact Us <i class="bi bi-leaf ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

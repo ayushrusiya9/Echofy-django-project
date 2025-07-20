@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Services - Echofy
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'css/service.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container-page-service">
+    <img src="{% static 'images/breadcumb-bg.jpg' %}" alt="">
+    <div class="service-page-heading">
+        <h1 style="color: white;">Our Services</h1>
+        <h4>Echofy — What We Offer</h4>
+    </div>
+</div>
+
+<!--service section  -->
+  <section class="services-section" style="background-image: url('{% static 'images/service-bg.jpg' %}');">
+    <div class="container">
+      <h4 class="section-subtitle"><i class="fa fa-leaf"></i> OUR SERVICES</h4>
+      <h2 class="section-title">Echofy Provide Environment<br>Best Leading Services</h2>
+
+      <div class="services-cards">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <img src="{% static 'images/service-icon1.png' %}" class="service-icon" alt="Icon">
+          <h3 class="service-title">Cleaning Ocean</h3>
+          <p class="service-text">
+            Alternative innovation to ethical network environmental whiteboard transparenes natural to environment
+          </p>
+          <img src="{% static 'images/service-1.jpg' %}" class="service-image" alt="Service Image">
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <img src="{% static 'images/service-icon2.png' %}" class="service-icon" alt="Icon">
+          <h3 class="service-title">Safe Environment</h3>
+          <p class="service-text">
+            Alternative innovation to ethical network environmental whiteboard transparenes natural to environment
+          </p>
+          <img src="{% static 'images/service-2.jpg' %}" class="service-image" alt="Service Image">
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <img src="{% static 'images/service-icon3.png' %}" class="service-icon" alt="Icon">
+          <h3 class="service-title">Dirty Recycling</h3>
+          <p class="service-text">
+            Alternative innovation to ethical network environmental whiteboard transparenes natural to environment
+          </p>
+          <img src="{% static 'images/service-3.jpg' %}" class="service-image" alt="Service Image">
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
